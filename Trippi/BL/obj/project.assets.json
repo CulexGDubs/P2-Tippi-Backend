@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mariy\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\yelle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\BL.csproj",
+      "projectUniqueName": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\BL\\BL.csproj",
       "projectName": "BL",
-      "projectPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\BL.csproj",
-      "packagesPath": "C:\\Users\\mariy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\obj\\",
+      "projectPath": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\BL\\BL.csproj",
+      "packagesPath": "C:\\Users\\yelle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\BL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mariy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\yelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
