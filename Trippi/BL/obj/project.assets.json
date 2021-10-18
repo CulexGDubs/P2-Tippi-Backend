@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dan\\source\\repos\\P2-Tippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
-      "projectName": "TrippiBL",
-      "projectPath": "C:\\Users\\Dan\\source\\repos\\P2-Tippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
+      "projectUniqueName": "C:\\Users\\Dan\\source\\repos\\P2-Tippi-Backend\\Trippi\\BL\\BL.csproj",
+      "projectName": "BL",
+      "projectPath": "C:\\Users\\Dan\\source\\repos\\P2-Tippi-Backend\\Trippi\\BL\\BL.csproj",
       "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Dan\\source\\repos\\P2-Tippi-Backend\\Trippi\\BL\\obj\\",
       "projectStyle": "PackageReference",
