@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace Models
     {
-    class Friends
+    public class Friends
         {
         [Key]
         public int Id { get; set; }
         public int UserId { get; set; }
         public int FriendId { get; set; }
+        public User MainUser { get; set; }
+        public User FriendUser { get; set; }
         }
     }
