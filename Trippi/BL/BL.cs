@@ -1,8 +1,17 @@
 ﻿using System;
+using DL;
 
-namespace BL
-{
-    public class Class1
+
+namespace TrippiBL
     {
+    public class BL : IBL
+
+
+    {
+        //private readonly IRepo _repo;
+        //public BL(IRepo repo)
+        //    {
+        //    _repo = repo;
+        //    }
     }
 }

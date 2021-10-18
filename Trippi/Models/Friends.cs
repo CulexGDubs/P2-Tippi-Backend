@@ -13,7 +13,7 @@ namespace Models
         public int Id { get; set; }
         public int UserId { get; set; }
         public int FriendId { get; set; }
-        public User MainUser { get; set; }
-        public User FriendUser { get; set; }
+        //public User MainUser { get; set; }
+        //public User FriendUser { get; set; }
         }
     }

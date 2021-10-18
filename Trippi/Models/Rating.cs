@@ -15,8 +15,8 @@ namespace Models
         public int TripId { get; set; }
         [Required]
         [Range(1,5)]
-        public int Rating { get; set; }
+        public int MyRating { get; set; }
         public User User { get; set; }
-        public Trip Trip { get; set; }
+        //public Trip Trip { get; set; }
         }
     }
