@@ -12,7 +12,7 @@ namespace DL
         {
             _context = dbcontext;
         }
-        public async Task<User> AddUserAsync(User user)
+        public async Task<User> CreateUserAsync(User user)
         {
             await _context.AddAsync(user);
 
