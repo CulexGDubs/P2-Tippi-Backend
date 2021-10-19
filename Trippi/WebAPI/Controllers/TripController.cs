@@ -22,16 +22,33 @@ namespace WebAPI.Controllers
 
         // GET: api/<ValuesController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            List<Trip> foundTrips = await _bl.GetAllTripsAsync();
+            if(foundTrips.Count > 0)
+            {
+                return Ok(foundTrips);
+            }
+            else
+            {
+                return NoContent();
+            }
         }
 
         // GET api/<ValuesController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            return "value";
+            Trip foundTrip = await _bl.GetTripAsync(id);
+            if(foundTrip != null)
+            {
+                return Ok(foundTrip);
+            }
+            else
+            {
+                return NoContent();
+            }
+            
         }
 
         // POST api/<ValuesController>
@@ -42,16 +59,11 @@ namespace WebAPI.Controllers
             return Created("api/[controller]", addedTrip);
         }
 
-        // PUT api/<ValuesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
         // DELETE api/<ValuesController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
+            await _bl.DeleteTripAsync(id);
         }
     }
 }
