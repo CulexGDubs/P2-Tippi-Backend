@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using DL;
 using Models;
@@ -23,6 +24,21 @@ namespace TrippiBL
         public async Task<Trip> CreateTripAsync(Trip trip)
         {
             return await _repo.CreateTripAsync(trip);
+        }
+
+        public async Task<Trip> GetTripAsync(int id)
+        {
+            return await _repo.GetTripAsync(id);
+        }
+
+        public async Task DeleteTripAsync(int id)
+        {
+            await _repo.DeleteTripAsync(id);
+        }
+
+        public async Task<List<Trip>> GetAllTripsAsync()
+        {
+            return await _repo.GetAllTripsAsync();
         }
     }
 }

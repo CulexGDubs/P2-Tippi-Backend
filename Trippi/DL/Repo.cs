@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace DL
     {
@@ -32,6 +33,23 @@ namespace DL
             _context.ChangeTracker.Clear();
 
             return trip;
+        }
+
+        public async Task<Trip> GetTripAsync(int Id)
+        {
+            return await _context.Trips.FirstOrDefaultAsync(t => t.Id == Id);
+        }
+
+        public async Task DeleteTripAsync(int id)
+        {
+            _context.Trips.Remove(await GetTripAsync(id));
+            await _context.SaveChangesAsync();
+            _context.ChangeTracker.Clear();
+        }
+
+        public async Task<List<Trip>> GetAllTripsAsync()
+        {
+            return await _context.Trips.ToListAsync();
         }
     }
 }
