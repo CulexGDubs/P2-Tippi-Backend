@@ -9,6 +9,6 @@ namespace TrippiBL
     {
     public interface IBL
     {
-        Task<User> AddUserAsync(User user);
+        Task<User> CreateUserAsync(User user);
     }
 }

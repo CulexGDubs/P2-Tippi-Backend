@@ -17,7 +17,7 @@ namespace TrippiBL
 
         public async Task<User> AddUserAsync(User user)
         {
-            return await _repo.AddUserAsync(user);
+            return await _repo.CreateUserAsync(user);
         }
     }
 }
