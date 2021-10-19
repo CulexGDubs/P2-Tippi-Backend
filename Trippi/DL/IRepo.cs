@@ -8,9 +8,8 @@ using Models;
 namespace DL
     {
     public interface IRepo
-        {
-            Task<User> CreateUserAsync(User user);
-
-            
-        }
+    {
+        Task<User> CreateUserAsync(User user);
+        Task<Trip> CreateTripAsync(Trip trip);
     }
+   }

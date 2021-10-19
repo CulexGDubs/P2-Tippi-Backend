@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Models;
+using TrippiBL;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +14,12 @@ namespace WebAPI.Controllers
     [ApiController]
     public class TripController : ControllerBase
     {
+        private IBL _bl;
+        public TripController(IBL bl)
+        {
+            _bl = bl;
+        }
+
         // GET: api/<ValuesController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -28,8 +36,10 @@ namespace WebAPI.Controllers
 
         // POST api/<ValuesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] Trip newTrip)
         {
+            Trip addedTrip = await _bl.CreateTripAsync(newTrip);
+            return Created("api/[controller]", addedTrip);
         }
 
         // PUT api/<ValuesController>/5

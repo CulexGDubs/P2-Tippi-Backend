@@ -22,5 +22,16 @@ namespace DL
 
             return user;
         }
+
+        public async Task<Trip> CreateTripAsync(Trip trip)
+        {
+            await _context.AddAsync(trip);
+
+            await _context.SaveChangesAsync();
+
+            _context.ChangeTracker.Clear();
+
+            return trip;
+        }
     }
 }
