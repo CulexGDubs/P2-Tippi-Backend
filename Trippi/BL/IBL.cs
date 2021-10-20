@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Models;
 
 namespace TrippiBL
     {
     public interface IBL
     {
+
 
         /// <summary>
         /// 
@@ -17,5 +19,12 @@ namespace TrippiBL
         /// <param name="distance">should be in km</param>
         /// <returns></returns>
          List<List<decimal>> GetNSEW(decimal latitude, decimal longitude, int distance);
+
+        Task<User> CreateUserAsync(User user);
+        Task<Trip> CreateTripAsync(Trip trip);
+        Task<Trip> GetTripAsync(int id);
+        Task DeleteTripAsync(int id);
+        Task<List<Trip>> GetAllTripsAsync();
+
     }
 }
