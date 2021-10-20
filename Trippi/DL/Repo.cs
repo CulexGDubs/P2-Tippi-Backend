@@ -51,5 +51,33 @@ namespace DL
         {
             return await _context.Trips.ToListAsync();
         }
+
+        public async Task<Rating> GetRatingAsync(int Id)
+        {
+            return await _context.Ratings.FirstOrDefaultAsync(t => t.Id == Id);
+        }
+
+        public async Task<Rating> CreateRatingAsync(Rating rating)
+        {
+            await _context.AddAsync(rating);
+
+            await _context.SaveChangesAsync();
+
+            _context.ChangeTracker.Clear();
+
+            return rating;
+        }
+
+        public async Task DeleteRatingAsync(int id)
+        {
+            _context.Ratings.Remove(await GetRatingAsync(id));
+            await _context.SaveChangesAsync();
+            _context.ChangeTracker.Clear();
+        }
+
+        public async Task<List<Rating>> GetAllRatingsAsync()
+        {
+            return await _context.Ratings.ToListAsync();
+        }
     }
 }
