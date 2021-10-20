@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using DL;
 
 using DecimalMath; //https://github.com/nathanpjones/DecimalMath
-using System.Collections.Generic;
+//using System.Collections.Generic;
 
 using Models;
 
@@ -139,6 +139,26 @@ namespace TrippiBL
         {
             return await _repo.GetAllTripsAsync();
 
+        }
+
+        public async Task<Rating> GetRatingAsync(int id)
+        {
+            return await _repo.GetRatingAsync(id);
+        }
+
+        public async Task<Rating> CreateRatingAsync(Rating rating)
+        {
+            return await _repo.CreateRatingAsync(rating);
+        }
+
+        public async Task DeleteRatingAsync(int id)
+        {
+            await _repo.DeleteRatingAsync(id);
+        }
+
+        public async Task<List<Rating>> GetAllRatingsAsync()
+        {
+            return await _repo.GetAllRatingsAsync();
         }
     }
 }

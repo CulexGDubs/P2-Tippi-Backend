@@ -26,5 +26,10 @@ namespace TrippiBL
         Task DeleteTripAsync(int id);
         Task<List<Trip>> GetAllTripsAsync();
 
+        Task<Rating> GetRatingAsync(int id);
+        Task<Rating> CreateRatingAsync(Rating rating);
+        Task DeleteRatingAsync(int id);
+        Task<List<Rating>> GetAllRatingsAsync();
+
     }
 }

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "DecimalMath.DecimalEx/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/DecimalEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DecimalEx.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/5.0.11": {
         "type": "package",
         "dependencies": {
@@ -253,6 +262,20 @@
     }
   },
   "libraries": {
+    "DecimalMath.DecimalEx/1.0.2": {
+      "sha512": "BCii/IxT7Tx7BPZ7MtrpqVlEii/iaHi4OOXpgaPi+zrphnkbe251KKI3S+pgnTzobfn0jS/SF7bgidqOMj1oGw==",
+      "type": "package",
+      "path": "decimalmath.decimalex/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "decimalmath.decimalex.1.0.2.nupkg.sha512",
+        "decimalmath.decimalex.nuspec",
+        "lib/netstandard2.0/DecimalEx.dll",
+        "lib/netstandard2.0/DecimalEx.xml"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/5.0.11": {
       "sha512": "2DQJvH6NRPRKPOR6ZaJe2pDn0bSpQZSzHk+7QatFo06KfvP3Tixy5DAOviXkP6963FEQMuVDSvZef1amORBnaw==",
       "type": "package",
@@ -715,6 +738,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DL >= 1.0.0",
+      "DecimalMath.DecimalEx >= 1.0.2",
       "Microsoft.EntityFrameworkCore >= 5.0.11",
       "Models >= 1.0.0"
     ]
@@ -765,6 +789,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "DecimalMath.DecimalEx": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.11, )"
