@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "DecimalMath.DecimalEx/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/DecimalEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DecimalEx.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/5.0.11": {
         "type": "package",
         "dependencies": {
@@ -253,6 +262,20 @@
     }
   },
   "libraries": {
+    "DecimalMath.DecimalEx/1.0.2": {
+      "sha512": "BCii/IxT7Tx7BPZ7MtrpqVlEii/iaHi4OOXpgaPi+zrphnkbe251KKI3S+pgnTzobfn0jS/SF7bgidqOMj1oGw==",
+      "type": "package",
+      "path": "decimalmath.decimalex/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "decimalmath.decimalex.1.0.2.nupkg.sha512",
+        "decimalmath.decimalex.nuspec",
+        "lib/netstandard2.0/DecimalEx.dll",
+        "lib/netstandard2.0/DecimalEx.xml"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/5.0.11": {
       "sha512": "2DQJvH6NRPRKPOR6ZaJe2pDn0bSpQZSzHk+7QatFo06KfvP3Tixy5DAOviXkP6963FEQMuVDSvZef1amORBnaw==",
       "type": "package",
@@ -715,29 +738,25 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DL >= 1.0.0",
+      "DecimalMath.DecimalEx >= 1.0.2",
       "Microsoft.EntityFrameworkCore >= 5.0.11",
       "Models >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mariy\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Dan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
+      "projectUniqueName": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
       "projectName": "TrippiBL",
-      "projectPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
-      "packagesPath": "C:\\Users\\mariy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\obj\\",
+      "projectPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
+      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mariy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -751,11 +770,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\DL\\DL.csproj": {
-              "projectPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\DL\\DL.csproj"
+            "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj"
             },
-            "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\Models\\Models.csproj"
+            "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj"
             }
           }
         }
@@ -770,6 +789,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "DecimalMath.DecimalEx": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.11, )"
@@ -790,7 +813,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
