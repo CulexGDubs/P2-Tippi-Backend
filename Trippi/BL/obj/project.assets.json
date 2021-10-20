@@ -720,25 +720,44 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mariy\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+<<<<<<< HEAD
+    "C:\\Users\\Dan\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\owner\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+>>>>>>> b416eddef478f3873ef5c7f97e7dbc9d478eb582
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
       "projectName": "TrippiBL",
-      "projectPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
-      "packagesPath": "C:\\Users\\mariy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\BL\\obj\\",
+      "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
+      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+      "projectUniqueName": "C:\\Users\\owner\\RevatureProjects\\P2\\P2-Trippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
+      "projectName": "TrippiBL",
+      "projectPath": "C:\\Users\\owner\\RevatureProjects\\P2\\P2-Trippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
+      "packagesPath": "C:\\Users\\owner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\owner\\RevatureProjects\\P2\\P2-Trippi-Backend\\Trippi\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\mariy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> b416eddef478f3873ef5c7f97e7dbc9d478eb582
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -751,11 +770,19 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\DL\\DL.csproj": {
-              "projectPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\DL\\DL.csproj"
+<<<<<<< HEAD
+            "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj"
             },
-            "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\mariy\\OneDrive\\Desktop\\Juniper Batch\\P2-Tippi-Backend\\Trippi\\Models\\Models.csproj"
+            "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj"
+=======
+            "C:\\Users\\owner\\RevatureProjects\\P2\\P2-Trippi-Backend\\Trippi\\DL\\DL.csproj": {
+              "projectPath": "C:\\Users\\owner\\RevatureProjects\\P2\\P2-Trippi-Backend\\Trippi\\DL\\DL.csproj"
+            },
+            "C:\\Users\\owner\\RevatureProjects\\P2\\P2-Trippi-Backend\\Trippi\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\owner\\RevatureProjects\\P2\\P2-Trippi-Backend\\Trippi\\Models\\Models.csproj"
+>>>>>>> b416eddef478f3873ef5c7f97e7dbc9d478eb582
             }
           }
         }
@@ -790,7 +817,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
