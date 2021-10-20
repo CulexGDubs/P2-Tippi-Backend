@@ -22,7 +22,7 @@ namespace WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] User newUser)
         {
-            User addedUser = await _bl.AddUserAsync(newUser);
+            User addedUser = await _bl.CreateUserAsync(newUser);
             return Created("api/[controller]", addedUser);
         }
 
