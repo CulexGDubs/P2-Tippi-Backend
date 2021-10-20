@@ -744,19 +744,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yelle\\.nuget\\packages\\": {}
+    "C:\\Users\\Dan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
+      "projectUniqueName": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
       "projectName": "TrippiBL",
-      "projectPath": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\BL\\TrippiBL.csproj",
-      "packagesPath": "C:\\Users\\yelle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\BL\\obj\\",
+      "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
+      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -770,11 +770,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\DL\\DL.csproj": {
-              "projectPath": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\DL\\DL.csproj"
+            "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj"
             },
-            "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\yelle\\Revature\\P2-Trippi-Backend\\Trippi\\Models\\Models.csproj"
+            "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj"
             }
           }
         }
@@ -813,8 +813,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -160,5 +160,26 @@ namespace TrippiBL
         {
             return await _repo.GetAllRatingsAsync();
         }
+
+        public async Task<List<User>> GetAllUsersAsync()
+        {
+            return await _repo.GetAllUsersAsync();
+        }
+
+        public async Task<User> GetOneUserByIdAsync(int id)
+        {
+            return await _repo.GetOneUserByIdAsync(id);
+        }
+
+        public async Task<Friends> AddFriendAsync(Friends friend)
+        {
+            return await _repo.AddFriendAsync(friend);
+        }
+
+        public async Task DeleteUserAsync(int id)
+        {
+            await _repo.DeleteUserAsync(id);
+        }
+
     }
 }
