@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "DecimalMath.DecimalEx/1.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/DecimalEx.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/DecimalEx.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore/5.0.11": {
         "type": "package",
         "dependencies": {
@@ -262,20 +253,6 @@
     }
   },
   "libraries": {
-    "DecimalMath.DecimalEx/1.0.2": {
-      "sha512": "BCii/IxT7Tx7BPZ7MtrpqVlEii/iaHi4OOXpgaPi+zrphnkbe251KKI3S+pgnTzobfn0jS/SF7bgidqOMj1oGw==",
-      "type": "package",
-      "path": "decimalmath.decimalex/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "decimalmath.decimalex.1.0.2.nupkg.sha512",
-        "decimalmath.decimalex.nuspec",
-        "lib/netstandard2.0/DecimalEx.dll",
-        "lib/netstandard2.0/DecimalEx.xml"
-      ]
-    },
     "Microsoft.EntityFrameworkCore/5.0.11": {
       "sha512": "2DQJvH6NRPRKPOR6ZaJe2pDn0bSpQZSzHk+7QatFo06KfvP3Tixy5DAOviXkP6963FEQMuVDSvZef1amORBnaw==",
       "type": "package",
@@ -738,7 +715,6 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DL >= 1.0.0",
-      "DecimalMath.DecimalEx >= 1.0.2",
       "Microsoft.EntityFrameworkCore >= 5.0.11",
       "Models >= 1.0.0"
     ]
@@ -749,11 +725,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
+      "projectUniqueName": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
       "projectName": "TrippiBL",
-      "projectPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
+      "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\TrippiBL.csproj",
       "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\obj\\",
+      "outputPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -770,11 +746,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj": {
-              "projectPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj"
+            "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\DL\\DL.csproj"
             },
-            "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Dan\\Source\\repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj"
+            "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Source\\Repos\\P2-Tippi-Backend-Dan\\Trippi\\Models\\Models.csproj"
             }
           }
         }
@@ -789,10 +765,6 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
-          "DecimalMath.DecimalEx": {
-            "target": "Package",
-            "version": "[1.0.2, )"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.11, )"
