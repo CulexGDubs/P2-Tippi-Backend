@@ -9,10 +9,22 @@ namespace TrippiBL
     {
     public interface IBL
     {
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="latitude"></param>
+        /// <param name="longitude"></param>
+        /// <param name="distance">should be in km</param>
+        /// <returns></returns>
+         List<List<decimal>> GetNSEW(decimal latitude, decimal longitude, int distance);
+
         Task<User> CreateUserAsync(User user);
         Task<Trip> CreateTripAsync(Trip trip);
         Task<Trip> GetTripAsync(int id);
         Task DeleteTripAsync(int id);
         Task<List<Trip>> GetAllTripsAsync();
+
     }
 }
