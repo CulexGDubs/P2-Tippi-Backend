@@ -8,7 +8,11 @@ using Models;
 namespace DL
     {
     public interface IRepo
-        {
-            Task<User> AddUserAsync(User user);
-        }
+    {
+        Task<User> AddUserAsync(User user);
+        Task<User> GetOneUserByIdAsync(int id);
+        Task<List<User>> GetAllUsersAsync();
+        Task<Friends> AddFriendAsync(Friends friend);
+        Task DeleteUserAsync(int id); 
+    }
     }
